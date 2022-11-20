@@ -24,7 +24,7 @@ class RowSpider(scrapy.Spider):
     )
     def start_requests(self):
         urls = [
-            'https://www.mywsba.org/PersonifyEbusiness/LegalDirectory.aspx?ShowSearchResults=TRUE&LicenseType=LLLT&County=Thurston&Country=USA',
+            'url',
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse_firstpage, dont_filter = True)
@@ -47,7 +47,7 @@ class RowSpider(scrapy.Spider):
             for row in r:
                 instr = str(row)
                 parts = instr.rsplit("'")
-                page_urls.append('https://www.mywsba.org/PersonifyEbusiness/' + parts[1])
+                page_urls.append('url' + parts[1])
             print(page_urls)
 
             for page_url in page_urls:
@@ -61,7 +61,7 @@ class RowSpider(scrapy.Spider):
         for row in r:
             instr = str(row)
             parts = instr.rsplit("'")
-            page_urls.append('https://www.mywsba.org/PersonifyEbusiness/' + parts[1])
+            page_urls.append('url' + parts[1])
         print(page_urls)
 
         for page_url in page_urls:
