@@ -1,0 +1,234 @@
+INFO: Scrapy 2.6.2 started (bot: wsba_scrapper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'wsba_scrapper',
+ 'NEWSPIDER_MODULE': 'wsba_scrapper.spiders',
+ 'SPIDER_LOADER_WARN_ONLY': True,
+ 'SPIDER_MODULES': ['wsba_scrapper.spiders']}
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Telnet Password: 1c8d34cff8a8f37e
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Filtered duplicate request: <GET https://www.mywsba.org/PersonifyEbusiness/LegalDirectory.aspx?ShowSearchResults=TRUE&LicenseType=LLLT&County=Thurston&Country=USA> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+DEBUG: Attempting to acquire lock 1846542556448 on C:\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 1846542556448 acquired on C:\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 1846542556448 on C:\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 1846542556448 released on C:\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Crawled (200) <GET https://www.mywsba.org/PersonifyEbusiness/LegalDirectory.aspx?ShowSearchResults=TRUE&LicenseType=LLLT&County=Thurston&Country=USA> (referer: None)
+DEBUG: Crawled (200) <GET https://www.mywsba.org/PersonifyEbusiness/LegalDirectory/LegalProfile.aspx?Usr_ID=000009516803> (referer: https://www.mywsba.org/PersonifyEbusiness/LegalDirectory.aspx?ShowSearchResults=TRUE&LicenseType=LLLT&County=Thurston&Country=USA)
+DEBUG: Scraped from <200 https://www.mywsba.org/PersonifyEbusiness/LegalDirectory/LegalProfile.aspx?Usr_ID=000009516803>
+{'Address': 'PO Box 2741',
+ 'Committees': 'None',
+ 'EligibleToPractice': 'No',
+ 'Email': None,
+ 'Employer': None,
+ 'Fax': None,
+ 'FirmSize': 'Law firm with 6-10 WSBA members',
+ 'HasJudicialService': 'Unknown',
+ 'Languages': 'None Specified',
+ 'PLILLLTLPO': 'All active LLLTs and LPOs are required to show proof of '
+               'ability to respond to damages resulting from his or her acts '
+               'or \r\n'
+               '            omissions in the performance of services permitted '
+               'under the license.',
+ 'Phone': '(360)\xa0515-7891',
+ 'PracticeAreas': 'Family Law',
+ 'TDD': None,
+ 'WaAdmitDate': '12/4/2015',
+ 'Website': None,
+ 'l_number': '108LLLT',
+ 'l_status': 'Voluntarily Resigned',
+ 'l_type': 'Limited License Legal Technician',
+ 'name': 'Jeffrey Allen Kinstler '}
+DEBUG: Crawled (200) <GET https://www.mywsba.org/PersonifyEbusiness/LegalDirectory/LegalProfile.aspx?Usr_ID=000009300412> (referer: https://www.mywsba.org/PersonifyEbusiness/LegalDirectory.aspx?ShowSearchResults=TRUE&LicenseType=LLLT&County=Thurston&Country=USA)
+DEBUG: Scraped from <200 https://www.mywsba.org/PersonifyEbusiness/LegalDirectory/LegalProfile.aspx?Usr_ID=000009300412>
+{'Address': 'PO Box 6192',
+ 'Committees': 'None',
+ 'EligibleToPractice': 'No',
+ 'Email': None,
+ 'Employer': 'Kellie Dightman Legal Technician, LLC',
+ 'Fax': '(360)\xa0515-7305',
+ 'FirmSize': 'Solo in shared office or suite',
+ 'HasJudicialService': 'Unknown',
+ 'Languages': 'None Specified',
+ 'PLILLLTLPO': 'All active LLLTs and LPOs are required to show proof of '
+               'ability to respond to damages resulting from his or her acts '
+               'or \r\n'
+               '            omissions in the performance of services permitted '
+               'under the license.',
+ 'Phone': '(360)\xa0310-4043',
+ 'PracticeAreas': 'Family Law',
+ 'TDD': None,
+ 'WaAdmitDate': '8/22/2016',
+ 'Website': None,
+ 'l_number': '116LLLT',
+ 'l_status': 'Inactive',
+ 'l_type': 'Limited License Legal Technician',
+ 'name': 'Kellie W Dightman '}
+INFO: Closing spider (finished)
+INFO: Stored csv feed (2 items) in: export.csv
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1566,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 95431,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'dupefilter/filtered': 2,
+ 'elapsed_time_seconds': 4.781237,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 11, 14, 20, 24, 39, 564356),
+ 'item_scraped_count': 2,
+ 'log_count/DEBUG': 11,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2022, 11, 14, 20, 24, 34, 783119)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.6.2 started (bot: wsba_scrapper)
+INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)], pyOpenSSL 22.0.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.19044-SP0
+INFO: Overridden settings:
+{'BOT_NAME': 'wsba_scrapper',
+ 'NEWSPIDER_MODULE': 'wsba_scrapper.spiders',
+ 'SPIDER_LOADER_WARN_ONLY': True,
+ 'SPIDER_MODULES': ['wsba_scrapper.spiders']}
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Telnet Password: c82f7430294fb196
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Attempting to acquire lock 2420277731216 on C:\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2420277731216 acquired on C:\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Attempting to release lock 2420277731216 on C:\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Lock 2420277731216 released on C:\Python310\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+DEBUG: Crawled (200) <GET https://www.mywsba.org/PersonifyEbusiness/LegalDirectory.aspx?ShowSearchResults=TRUE&LicenseType=LLLT&County=Thurston&Country=USA> (referer: None)
+DEBUG: Crawled (200) <GET https://www.mywsba.org/PersonifyEbusiness/LegalDirectory/LegalProfile.aspx?Usr_ID=000009300412> (referer: https://www.mywsba.org/PersonifyEbusiness/LegalDirectory.aspx?ShowSearchResults=TRUE&LicenseType=LLLT&County=Thurston&Country=USA)
+DEBUG: Scraped from <200 https://www.mywsba.org/PersonifyEbusiness/LegalDirectory/LegalProfile.aspx?Usr_ID=000009300412>
+{'Address': 'PO Box 6192',
+ 'Committees': 'None',
+ 'EligibleToPractice': 'No',
+ 'Email': None,
+ 'Employer': 'Kellie Dightman Legal Technician, LLC',
+ 'Fax': '(360)\xa0515-7305',
+ 'FirmSize': 'Solo in shared office or suite',
+ 'HasJudicialService': 'Unknown',
+ 'Languages': 'None Specified',
+ 'PLILLLTLPO': 'All active LLLTs and LPOs are required to show proof of '
+               'ability to respond to damages resulting from his or her acts '
+               'or \r\n'
+               '            omissions in the performance of services permitted '
+               'under the license.',
+ 'Phone': '(360)\xa0310-4043',
+ 'PracticeAreas': 'Family Law',
+ 'TDD': None,
+ 'WaAdmitDate': '8/22/2016',
+ 'Website': None,
+ 'l_number': '116LLLT',
+ 'l_status': 'Inactive',
+ 'l_type': 'Limited License Legal Technician',
+ 'name': 'Kellie W Dightman '}
+DEBUG: Crawled (200) <GET https://www.mywsba.org/PersonifyEbusiness/LegalDirectory/LegalProfile.aspx?Usr_ID=000009516803> (referer: https://www.mywsba.org/PersonifyEbusiness/LegalDirectory.aspx?ShowSearchResults=TRUE&LicenseType=LLLT&County=Thurston&Country=USA)
+DEBUG: Scraped from <200 https://www.mywsba.org/PersonifyEbusiness/LegalDirectory/LegalProfile.aspx?Usr_ID=000009516803>
+{'Address': 'PO Box 2741',
+ 'Committees': 'None',
+ 'EligibleToPractice': 'No',
+ 'Email': None,
+ 'Employer': None,
+ 'Fax': None,
+ 'FirmSize': 'Law firm with 6-10 WSBA members',
+ 'HasJudicialService': 'Unknown',
+ 'Languages': 'None Specified',
+ 'PLILLLTLPO': 'All active LLLTs and LPOs are required to show proof of '
+               'ability to respond to damages resulting from his or her acts '
+               'or \r\n'
+               '            omissions in the performance of services permitted '
+               'under the license.',
+ 'Phone': '(360)\xa0515-7891',
+ 'PracticeAreas': 'Family Law',
+ 'TDD': None,
+ 'WaAdmitDate': '12/4/2015',
+ 'Website': None,
+ 'l_number': '108LLLT',
+ 'l_status': 'Voluntarily Resigned',
+ 'l_type': 'Limited License Legal Technician',
+ 'name': 'Jeffrey Allen Kinstler '}
+INFO: Closing spider (finished)
+INFO: Stored csv feed (2 items) in: export.csv
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1566,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 95431,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 4.515954,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 11, 14, 20, 28, 13, 108931),
+ 'item_scraped_count': 2,
+ 'log_count/DEBUG': 10,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2022, 11, 14, 20, 28, 8, 592977)}
+INFO: Spider closed (finished)
